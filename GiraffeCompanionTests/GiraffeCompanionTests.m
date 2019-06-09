@@ -8,30 +8,81 @@
 
 #import <XCTest/XCTest.h>
 
+#import "Companion.h"
+#import "CompanionBuilder.h"
+#import "CompanionItemViewModel.h"
+#import "CompanionDetailViewModel.h"
+
 @interface GiraffeCompanionTests : XCTestCase
+
+@property (strong, nonatomic) NSArray<Companion *> *companions;
+
++ (NSData *)loadJSONDataFromFixtureWithFileName:(NSString *)fileName;
 
 @end
 
 @implementation GiraffeCompanionTests
 
++ (NSData *)loadJSONDataFromFixtureWithFileName:(NSString *)fileName {
+    NSString *basename = [fileName stringByDeletingPathExtension];
+    NSString *extension = [fileName pathExtension];
+    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:basename ofType:extension];
+
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+
+    return data;
+}
+
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    id json = [GiraffeCompanionTests loadJSONDataFromFixtureWithFileName:@"companions.json"];
+    NSError *error;
+
+    self.companions = [CompanionBuilder companionsFromJSON:json error:&error];
+
+    if (error) {
+        NSLog(@"Error while trying to get companion data: %@", error.localizedDescription);
+    }
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)testCompanionItemViewModelPropertiesCorrect {
+    CompanionItemViewModel *viewModel =
+        [[CompanionItemViewModel alloc] initWithCompanion:self.companions.firstObject];
+
+    XCTAssertEqualObjects(viewModel.localImage, @"Vic");
+    XCTAssertEqualObjects(viewModel.imageURL, @"https://img.izismile.com/img/img2/20090731/funny_giraffe_01.jpg");
+    XCTAssertEqualObjects(viewModel.name, @"Vic T. Orr");
+    XCTAssertEqualObjects(viewModel.age, @"Age: 8");
+    XCTAssertEqualObjects(viewModel.cost, @"$100.00/hour");
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testCompanionDetailViewModelPropertiesCorrect {
+    CompanionDetailViewModel *viewModel =
+        [[CompanionDetailViewModel alloc] initWithCompanion:self.companions.firstObject];
+
+    XCTAssertEqualObjects(viewModel.localImage, @"Vic");
+    XCTAssertEqualObjects(viewModel.imageURL, @"https://img.izismile.com/img/img2/20090731/funny_giraffe_01.jpg");
+    XCTAssertEqualObjects(viewModel.title, @"Vic(8) - $100.00/hour");
+    XCTAssertEqualObjects(viewModel.blurb, @"\"I wanna chick who likes to watch me pump iron!!!\"");
+    XCTAssertEqualObjects(viewModel.likes, @"Likes: working out bro, grunting, lifting heavy stuff");
+    XCTAssertEqualObjects(viewModel.dislikes, @"Dislikes: kids, cupcakes, feathers");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testModelLoading {
+}
+
+- (void)testDelegateCalling {
+}
+
+- (void)testCompletionCallingForASyncCalls {
+}
+
+- (void)testCostDurationHelper {
+}
+
+- (void)testCompanionBuilderWithValidData {
+}
+
+- (void)testCompanionBuilderWithInvalidData {
 }
 
 @end

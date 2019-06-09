@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9741A97822AD51030078F108 /* companions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9741A97622AD4DCB0078F108 /* companions.json */; };
 		97F3E8E322AC0831000A518C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E8E222AC0831000A518C /* AppDelegate.m */; };
-		97F3E8E622AC0831000A518C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E8E522AC0831000A518C /* ViewController.m */; };
 		97F3E8E922AC0831000A518C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F3E8E722AC0831000A518C /* Main.storyboard */; };
 		97F3E8EB22AC0832000A518C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F3E8EA22AC0832000A518C /* Assets.xcassets */; };
 		97F3E8EE22AC0832000A518C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F3E8EC22AC0832000A518C /* LaunchScreen.storyboard */; };
 		97F3E8F122AC0832000A518C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E8F022AC0832000A518C /* main.m */; };
 		97F3E8FB22AC0832000A518C /* GiraffeCompanionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E8FA22AC0832000A518C /* GiraffeCompanionTests.m */; };
+		97F3E90822AC08A2000A518C /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E90722AC08A2000A518C /* ApiClient.m */; };
+		97F3E90D22AC0A79000A518C /* Companion.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E90C22AC0A79000A518C /* Companion.m */; };
+		97F3E90F22AC0B22000A518C /* companions.json in Resources */ = {isa = PBXBuildFile; fileRef = 97F3E90E22AC0B22000A518C /* companions.json */; };
+		97F3E91322AC0BD9000A518C /* CompanionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E91222AC0BD9000A518C /* CompanionBuilder.m */; };
+		97F3E91922AC0C42000A518C /* CompanionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E91722AC0C42000A518C /* CompanionTableViewCell.m */; };
+		97F3E91A22AC0C42000A518C /* CompanionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97F3E91822AC0C42000A518C /* CompanionTableViewCell.xib */; };
+		97F3E91D22AC0CF9000A518C /* CompanionItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E91C22AC0CF9000A518C /* CompanionItemViewModel.m */; };
+		97F3E92322AC0FC2000A518C /* CompanionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E92222AC0FC2000A518C /* CompanionsViewController.m */; };
+		97F3E92622AC13AD000A518C /* CompanionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E92522AC13AC000A518C /* CompanionViewController.m */; };
+		97F3E92922AC14CB000A518C /* CompanionDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E92822AC14CB000A518C /* CompanionDetailViewModel.m */; };
+		97F3E93522AD33DA000A518C /* CostDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F3E93422AD33DA000A518C /* CostDuration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +38,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		97F3E8DE22AC0831000A518C /* GiraffeCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiraffeCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9741A97622AD4DCB0078F108 /* companions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = companions.json; sourceTree = "<group>"; };
+		97F3E8DE22AC0831000A518C /* Flopp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flopp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F3E8E122AC0831000A518C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97F3E8E222AC0831000A518C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		97F3E8E422AC0831000A518C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		97F3E8E522AC0831000A518C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		97F3E8E822AC0831000A518C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97F3E8EA22AC0832000A518C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97F3E8ED22AC0832000A518C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F3E8EF22AC0832000A518C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97F3E8F022AC0832000A518C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		97F3E8F622AC0832000A518C /* GiraffeCompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiraffeCompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F3E8F622AC0832000A518C /* FloppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F3E8FA22AC0832000A518C /* GiraffeCompanionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiraffeCompanionTests.m; sourceTree = "<group>"; };
 		97F3E8FC22AC0832000A518C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F3E90622AC08A2000A518C /* ApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiClient.h; sourceTree = "<group>"; };
+		97F3E90722AC08A2000A518C /* ApiClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiClient.m; sourceTree = "<group>"; };
+		97F3E90B22AC0A79000A518C /* Companion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Companion.h; sourceTree = "<group>"; };
+		97F3E90C22AC0A79000A518C /* Companion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Companion.m; sourceTree = "<group>"; };
+		97F3E90E22AC0B22000A518C /* companions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = companions.json; sourceTree = "<group>"; };
+		97F3E91122AC0BD9000A518C /* CompanionBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanionBuilder.h; sourceTree = "<group>"; };
+		97F3E91222AC0BD9000A518C /* CompanionBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanionBuilder.m; sourceTree = "<group>"; };
+		97F3E91622AC0C42000A518C /* CompanionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanionTableViewCell.h; sourceTree = "<group>"; };
+		97F3E91722AC0C42000A518C /* CompanionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanionTableViewCell.m; sourceTree = "<group>"; };
+		97F3E91822AC0C42000A518C /* CompanionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanionTableViewCell.xib; sourceTree = "<group>"; };
+		97F3E91B22AC0CF9000A518C /* CompanionItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanionItemViewModel.h; sourceTree = "<group>"; };
+		97F3E91C22AC0CF9000A518C /* CompanionItemViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanionItemViewModel.m; sourceTree = "<group>"; };
+		97F3E91E22AC0D33000A518C /* CompanionViewable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanionViewable.h; sourceTree = "<group>"; };
+		97F3E92222AC0FC2000A518C /* CompanionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanionsViewController.m; sourceTree = "<group>"; };
+		97F3E92422AC13AC000A518C /* CompanionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanionViewController.h; sourceTree = "<group>"; };
+		97F3E92522AC13AC000A518C /* CompanionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanionViewController.m; sourceTree = "<group>"; };
+		97F3E92722AC14C1000A518C /* CompanionDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanionDetailViewModel.h; sourceTree = "<group>"; };
+		97F3E92822AC14CB000A518C /* CompanionDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanionDetailViewModel.m; sourceTree = "<group>"; };
+		97F3E93322AD33DA000A518C /* CostDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CostDuration.h; sourceTree = "<group>"; };
+		97F3E93422AD33DA000A518C /* CostDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CostDuration.m; sourceTree = "<group>"; };
+		97F3E93622AD3960000A518C /* CompanionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanionsViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +103,8 @@
 		97F3E8DF22AC0831000A518C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97F3E8DE22AC0831000A518C /* GiraffeCompanion.app */,
-				97F3E8F622AC0832000A518C /* GiraffeCompanionTests.xctest */,
+				97F3E8DE22AC0831000A518C /* Flopp.app */,
+				97F3E8F622AC0832000A518C /* FloppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,11 +112,15 @@
 		97F3E8E022AC0831000A518C /* GiraffeCompanion */ = {
 			isa = PBXGroup;
 			children = (
+				97F3E93222AD33C6000A518C /* Helpers */,
+				97F3E91022AC0BC4000A518C /* Builders */,
+				97F3E90922AC09E9000A518C /* Fixtures */,
+				97F3E90A22AC0A49000A518C /* Models */,
+				97F3E90522AC083F000A518C /* Network */,
+				97F3E91422AC0BDD000A518C /* ViewModels */,
+				97F3E91522AC0BF1000A518C /* Views */,
 				97F3E8E122AC0831000A518C /* AppDelegate.h */,
 				97F3E8E222AC0831000A518C /* AppDelegate.m */,
-				97F3E8E422AC0831000A518C /* ViewController.h */,
-				97F3E8E522AC0831000A518C /* ViewController.m */,
-				97F3E8E722AC0831000A518C /* Main.storyboard */,
 				97F3E8EA22AC0832000A518C /* Assets.xcassets */,
 				97F3E8EC22AC0832000A518C /* LaunchScreen.storyboard */,
 				97F3E8EF22AC0832000A518C /* Info.plist */,
@@ -97,18 +132,90 @@
 		97F3E8F922AC0832000A518C /* GiraffeCompanionTests */ = {
 			isa = PBXGroup;
 			children = (
+				9741A97622AD4DCB0078F108 /* companions.json */,
 				97F3E8FA22AC0832000A518C /* GiraffeCompanionTests.m */,
 				97F3E8FC22AC0832000A518C /* Info.plist */,
 			);
 			path = GiraffeCompanionTests;
 			sourceTree = "<group>";
 		};
+		97F3E90522AC083F000A518C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				97F3E90622AC08A2000A518C /* ApiClient.h */,
+				97F3E90722AC08A2000A518C /* ApiClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		97F3E90922AC09E9000A518C /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				97F3E90E22AC0B22000A518C /* companions.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		97F3E90A22AC0A49000A518C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97F3E90B22AC0A79000A518C /* Companion.h */,
+				97F3E90C22AC0A79000A518C /* Companion.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97F3E91022AC0BC4000A518C /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				97F3E91122AC0BD9000A518C /* CompanionBuilder.h */,
+				97F3E91222AC0BD9000A518C /* CompanionBuilder.m */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		97F3E91422AC0BDD000A518C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				97F3E92722AC14C1000A518C /* CompanionDetailViewModel.h */,
+				97F3E92822AC14CB000A518C /* CompanionDetailViewModel.m */,
+				97F3E91B22AC0CF9000A518C /* CompanionItemViewModel.h */,
+				97F3E91C22AC0CF9000A518C /* CompanionItemViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		97F3E91522AC0BF1000A518C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97F3E93622AD3960000A518C /* CompanionsViewController.h */,
+				97F3E92222AC0FC2000A518C /* CompanionsViewController.m */,
+				97F3E91622AC0C42000A518C /* CompanionTableViewCell.h */,
+				97F3E91722AC0C42000A518C /* CompanionTableViewCell.m */,
+				97F3E91822AC0C42000A518C /* CompanionTableViewCell.xib */,
+				97F3E91E22AC0D33000A518C /* CompanionViewable.h */,
+				97F3E92422AC13AC000A518C /* CompanionViewController.h */,
+				97F3E92522AC13AC000A518C /* CompanionViewController.m */,
+				97F3E8E722AC0831000A518C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97F3E93222AD33C6000A518C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				97F3E93322AD33DA000A518C /* CostDuration.h */,
+				97F3E93422AD33DA000A518C /* CostDuration.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		97F3E8DD22AC0831000A518C /* GiraffeCompanion */ = {
+		97F3E8DD22AC0831000A518C /* Flopp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97F3E8FF22AC0832000A518C /* Build configuration list for PBXNativeTarget "GiraffeCompanion" */;
+			buildConfigurationList = 97F3E8FF22AC0832000A518C /* Build configuration list for PBXNativeTarget "Flopp" */;
 			buildPhases = (
 				97F3E8DA22AC0831000A518C /* Sources */,
 				97F3E8DB22AC0831000A518C /* Frameworks */,
@@ -118,14 +225,14 @@
 			);
 			dependencies = (
 			);
-			name = GiraffeCompanion;
+			name = Flopp;
 			productName = GiraffeCompanion;
-			productReference = 97F3E8DE22AC0831000A518C /* GiraffeCompanion.app */;
+			productReference = 97F3E8DE22AC0831000A518C /* Flopp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		97F3E8F522AC0832000A518C /* GiraffeCompanionTests */ = {
+		97F3E8F522AC0832000A518C /* FloppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97F3E90222AC0832000A518C /* Build configuration list for PBXNativeTarget "GiraffeCompanionTests" */;
+			buildConfigurationList = 97F3E90222AC0832000A518C /* Build configuration list for PBXNativeTarget "FloppTests" */;
 			buildPhases = (
 				97F3E8F222AC0832000A518C /* Sources */,
 				97F3E8F322AC0832000A518C /* Frameworks */,
@@ -136,9 +243,9 @@
 			dependencies = (
 				97F3E8F822AC0832000A518C /* PBXTargetDependency */,
 			);
-			name = GiraffeCompanionTests;
+			name = FloppTests;
 			productName = GiraffeCompanionTests;
-			productReference = 97F3E8F622AC0832000A518C /* GiraffeCompanionTests.xctest */;
+			productReference = 97F3E8F622AC0832000A518C /* FloppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +266,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 97F3E8D922AC0831000A518C /* Build configuration list for PBXProject "GiraffeCompanion" */;
+			buildConfigurationList = 97F3E8D922AC0831000A518C /* Build configuration list for PBXProject "Flopp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,8 +279,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97F3E8DD22AC0831000A518C /* GiraffeCompanion */,
-				97F3E8F522AC0832000A518C /* GiraffeCompanionTests */,
+				97F3E8DD22AC0831000A518C /* Flopp */,
+				97F3E8F522AC0832000A518C /* FloppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,7 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				97F3E8EE22AC0832000A518C /* LaunchScreen.storyboard in Resources */,
+				97F3E91A22AC0C42000A518C /* CompanionTableViewCell.xib in Resources */,
 				97F3E8EB22AC0832000A518C /* Assets.xcassets in Resources */,
+				97F3E90F22AC0B22000A518C /* companions.json in Resources */,
 				97F3E8E922AC0831000A518C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9741A97822AD51030078F108 /* companions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,9 +313,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F3E8E622AC0831000A518C /* ViewController.m in Sources */,
+				97F3E92322AC0FC2000A518C /* CompanionsViewController.m in Sources */,
+				97F3E91922AC0C42000A518C /* CompanionTableViewCell.m in Sources */,
+				97F3E91D22AC0CF9000A518C /* CompanionItemViewModel.m in Sources */,
 				97F3E8F122AC0832000A518C /* main.m in Sources */,
+				97F3E92622AC13AD000A518C /* CompanionViewController.m in Sources */,
 				97F3E8E322AC0831000A518C /* AppDelegate.m in Sources */,
+				97F3E92922AC14CB000A518C /* CompanionDetailViewModel.m in Sources */,
+				97F3E90822AC08A2000A518C /* ApiClient.m in Sources */,
+				97F3E93522AD33DA000A518C /* CostDuration.m in Sources */,
+				97F3E91322AC0BD9000A518C /* CompanionBuilder.m in Sources */,
+				97F3E90D22AC0A79000A518C /* Companion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +340,7 @@
 /* Begin PBXTargetDependency section */
 		97F3E8F822AC0832000A518C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 97F3E8DD22AC0831000A518C /* GiraffeCompanion */;
+			target = 97F3E8DD22AC0831000A518C /* Flopp */;
 			targetProxy = 97F3E8F722AC0832000A518C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -366,11 +484,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VL3Q94HMUA;
 				INFOPLIST_FILE = GiraffeCompanion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.schisler.GiraffeCompanion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flopp.giraffecompanion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,11 +502,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VL3Q94HMUA;
 				INFOPLIST_FILE = GiraffeCompanion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.schisler.GiraffeCompanion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flopp.giraffecompanion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,7 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schisler.GiraffeCompanionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiraffeCompanion.app/GiraffeCompanion";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flopp.app/Flopp";
 			};
 			name = Debug;
 		};
@@ -427,14 +547,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schisler.GiraffeCompanionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiraffeCompanion.app/GiraffeCompanion";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flopp.app/Flopp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97F3E8D922AC0831000A518C /* Build configuration list for PBXProject "GiraffeCompanion" */ = {
+		97F3E8D922AC0831000A518C /* Build configuration list for PBXProject "Flopp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97F3E8FD22AC0832000A518C /* Debug */,
@@ -443,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97F3E8FF22AC0832000A518C /* Build configuration list for PBXNativeTarget "GiraffeCompanion" */ = {
+		97F3E8FF22AC0832000A518C /* Build configuration list for PBXNativeTarget "Flopp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97F3E90022AC0832000A518C /* Debug */,
@@ -452,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97F3E90222AC0832000A518C /* Build configuration list for PBXNativeTarget "GiraffeCompanionTests" */ = {
+		97F3E90222AC0832000A518C /* Build configuration list for PBXNativeTarget "FloppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97F3E90322AC0832000A518C /* Debug */,

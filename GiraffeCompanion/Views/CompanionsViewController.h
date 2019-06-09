@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CompanionsViewController.h
 //  GiraffeCompanion
 //
 //  Created by John Schisler on 2019-06-08.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface CompanionsViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

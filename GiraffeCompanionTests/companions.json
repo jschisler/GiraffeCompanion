@@ -1,0 +1,107 @@
+[
+    {
+        "companion_id":0,
+        "first_name":"Vic",
+        "last_name":"T. Orr",
+        "local_image":"Vic",
+        "image_url_dynamic":"https://img.izismile.com/img/img2/20090731/funny_giraffe_01.jpg",
+        "age":8,
+        "likes":[
+            "working out bro",
+            "grunting",
+            "lifting heavy stuff"
+        ],
+        "dislikes":[
+            "kids",
+            "cupcakes",
+            "feathers"
+        ],
+        "blurb":"I wanna chick who likes to watch me pump iron!!!",
+        "cost":100.00,
+        "duration":"hour"
+    },
+    {
+        "companion_id":1,
+        "first_name":"Petunia",
+        "last_name":"D. Plant",
+        "local_image":"Petunia",
+        "image_url_dynamic":"https://img.izismile.com/img/img2/20090731/funny_giraffe_02.jpg",
+        "age":11,
+        "likes":[
+            "pink",
+            "long necks",
+            "knitting (when I have time)"
+        ],
+        "dislikes":[
+            "loud noises",
+            "cheese",
+            "green"
+        ],
+        "blurb":"I'm looking for a nice gentleman who I can enjoy my golden years with.",
+        "cost":75.00,
+        "duration":"hour"
+    },
+    {
+        "companion_id":2,
+        "first_name":"Karen",
+        "last_name":"R. Jones",
+        "local_image":"Karen",
+        "image_url_dynamic":"https://img.izismile.com/img/img2/20090731/funny_giraffe_03.jpg",
+        "age":8,
+        "likes":[
+            "pizza",
+            "cupcakes",
+            "steak"
+        ],
+        "dislikes":[
+            "moving around",
+            "standing up",
+            "vegetables"
+        ],
+        "blurb":"I may be a big girl but I've got a lot of love to give. Pick me!",
+        "cost":125.00,
+        "duration":"day"
+    },
+    {
+        "companion_id":3,
+        "first_name":"Clark",
+        "last_name":"N. Walker",
+        "local_image":"Clark",
+        "image_url_dynamic":"https://img.izismile.com/img/img2/20090731/funny_giraffe_04.jpg",
+        "age":10,
+        "likes":[
+            "zebras",
+            "zebras",
+            "zebras"
+        ],
+        "dislikes":[
+            "anything that is not a zebra",
+            "pickles",
+            "ferris wheels"
+        ],
+        "blurb":"You got stripes? I'm interested!",
+        "cost":1000.00,
+        "duration":"week"
+    },
+    {
+        "companion_id":4,
+        "first_name":"Carl",
+        "last_name":"Q. Pinkman",
+        "local_image":"Carl",
+        "image_url_dynamic":"https://img.izismile.com/img/img2/20090731/funny_giraffe_05.jpg",
+        "age":35,
+        "likes":[
+            "GIRAFFES!",
+            "long legs",
+            "strong birthing hips"
+        ],
+        "dislikes":[
+            "humans",
+            "working",
+            "popsicle sticks"
+        ],
+        "blurb":"Who says a human can't love a giraffe? NOT ME!",
+        "cost":450.00,
+        "duration":"week"
+    }
+]

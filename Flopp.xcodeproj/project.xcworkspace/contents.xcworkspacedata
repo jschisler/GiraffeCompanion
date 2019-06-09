@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GiraffeCompanion.xcodeproj">
+      location = "self:/Users/jschisler/projects/Flipp/GiraffeCompanion/Flopp.xcodeproj">
    </FileRef>
 </Workspace>
